@@ -26,7 +26,7 @@ namespace Enigma
         public int ReverseEncode(int input)
         {
             int resultat = (Array.IndexOf(Config, input) + 1 - Position) % 26;
-            while (resultat < 0)
+            while (resultat <= 0)
             {
                 resultat += 26;
             }
