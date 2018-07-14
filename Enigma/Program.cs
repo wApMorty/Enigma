@@ -10,15 +10,12 @@ namespace Enigma
     {
         static void Main(string[] args)
         {
-
-            Machine m1 = new Machine();
-            Machine m2 = new Machine();
-            Machine m3 = new Machine();
-            Machine m4 = new Machine();
-            Console.WriteLine(m1.Encode("WBYHFHLBLLYCZIRSJERGUNM"));
-            Console.WriteLine(m2.Encode("NBYTRTQASOYPE"));
-            Console.WriteLine(m3.Encode("OZUPEFQURMUZOYTMANGVPLYD"));
-            Console.WriteLine(m4.Encode("XSWEYPXVOQPCYHTNGNJ"));
+            while (true)
+            {
+                string input = Console.ReadLine();
+                Machine m1 = new Machine();
+                Console.WriteLine(m1.Encode(input));
+            }
 
         }
     }
