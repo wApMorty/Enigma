@@ -11,221 +11,70 @@ namespace Enigma
 
         public static int ToInt(Char a)
         {
-            if (a == 'A')
+            switch (a)
             {
-                return 1;
+                case 'A': return 1;
+                case 'B': return 2;
+                case 'C': return 3;
+                case 'D': return 4;
+                case 'E': return 5;
+                case 'F': return 6;
+                case 'G': return 7;
+                case 'H': return 8;
+                case 'I': return 9;
+                case 'J': return 10;
+                case 'K': return 11;
+                case 'L': return 12;
+                case 'M': return 13;
+                case 'N': return 14;
+                case 'O': return 15;
+                case 'P': return 16;
+                case 'Q': return 17;
+                case 'R': return 18;
+                case 'S': return 19;
+                case 'T': return 20;
+                case 'U': return 21;
+                case 'V': return 22;
+                case 'W': return 23;
+                case 'X': return 24;
+                case 'Y': return 25;
+                case 'Z': return 26;
+                default: return 0;
             }
-            if (a == 'B')
-            {
-                return 2;
-            }
-            if (a == 'C')
-            {
-                return 3;
-            }
-            if (a == 'D')
-            {
-                return 4;
-            }
-            if (a == 'E')
-            {
-                return 5;
-            }
-            if (a == 'F')
-            {
-                return 6;
-            }
-            if (a == 'G')
-            {
-                return 7;
-            }
-            if (a == 'H')
-            {
-                return 8;
-            }
-            if (a == 'I')
-            {
-                return 9;
-            }
-            if (a == 'J')
-            {
-                return 10;
-            }
-            if (a == 'K')
-            {
-                return 11;
-            }
-            if (a == 'L')
-            {
-                return 12;
-            }
-            if (a == 'M')
-            {
-                return 13;
-            }
-            if (a == 'N')
-            {
-                return 14;
-            }
-            if (a == 'O')
-            {
-                return 15;
-            }
-            if (a == 'P')
-            {
-                return 16;
-            }
-            if (a == 'Q')
-            {
-                return 17;
-            }
-            if (a == 'R')
-            {
-                return 18;
-            }
-            if (a == 'S')
-            {
-                return 19;
-            }
-            if (a == 'T')
-            {
-                return 20;
-            }
-            if (a == 'U')
-            {
-                return 21;
-            }
-            if (a == 'V')
-            {
-                return 22;
-            }
-            if (a == 'W')
-            {
-                return 23;
-            }
-            if (a == 'X')
-            {
-                return 24;
-            }
-            if (a == 'Y')
-            {
-                return 25;
-            }
-            if (a == 'Z')
-            {
-                return 26;
-            }
-            return 0;
         }
 
         public static char ToChar(int a)
         {
-            if (a == 1)
+            switch (a)
             {
-                return 'A';
+                case 1: return 'A';
+                case 2: return 'B';
+                case 3: return 'C';
+                case 4: return 'D';
+                case 5: return 'E';
+                case 6: return 'F';
+                case 7: return 'G';
+                case 8: return 'H';
+                case 9: return 'I';
+                case 10: return 'J';
+                case 11: return 'K';
+                case 12: return 'L';
+                case 13: return 'M';
+                case 14: return 'N';
+                case 15: return 'O';
+                case 16: return 'P';
+                case 17: return 'Q';
+                case 18: return 'R';
+                case 19: return 'S';
+                case 20: return 'T';
+                case 21: return 'U';
+                case 22: return 'V';
+                case 23: return 'W';
+                case 24: return 'X';
+                case 25: return 'Y';
+                case 26: return 'Z';
+                default: return '0';
             }
-            if (a == 2)
-            {
-                return 'B';
-            }
-            if (a == 3)
-            {
-                return 'C';
-            }
-            if (a == 4)
-            {
-                return 'D';
-            }
-            if (a == 5)
-            {
-                return 'E';
-            }
-            if (a == 6)
-            {
-                return 'F';
-            }
-            if (a == 7)
-            {
-                return 'G';
-            }
-            if (a == 8)
-            {
-                return 'H';
-            }
-            if (a == 9)
-            {
-                return 'I';
-            }
-            if (a == 10)
-            {
-                return 'J';
-            }
-            if (a == 11)
-            {
-                return 'K';
-            }
-            if (a == 12)
-            {
-                return 'L';
-            }
-            if (a == 13)
-            {
-                return 'M';
-            }
-            if (a == 14)
-            {
-                return 'N';
-            }
-            if (a == 15)
-            {
-                return 'O';
-            }
-            if (a == 16)
-            {
-                return 'P';
-            }
-            if (a == 17)
-            {
-                return 'Q';
-            }
-            if (a == 18)
-            {
-                return 'R';
-            }
-            if (a == 19)
-            {
-                return 'S';
-            }
-            if (a == 20)
-            {
-                return 'T';
-            }
-            if (a == 21)
-            {
-                return 'U';
-            }
-            if (a == 22)
-            {
-                return 'V';
-            }
-            if (a == 23)
-            {
-                return 'W';
-            }
-            if (a == 24)
-            {
-                return 'X';
-            }
-            if (a == 25)
-            {
-                return 'Y';
-            }
-            if (a == 26)
-            {
-                return 'Z';
-            }
-
-            return '0';
         }
 
         public static string ToString(int[] a)
