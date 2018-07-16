@@ -10,9 +10,27 @@ namespace Enigma
     {
 
         public Facade f = new Facade();
-        public Rotor1 r1 = new Rotor1(0);
-        public Rotor2 r2 = new Rotor2(0);
-        public Rotor3 r3 = new Rotor3(0);
+        public Rotor r1 = new Rotor {
+            Position = 0,
+            PositionInitiale = 0,
+            Config = new int[] { 7, 17, 23, 8, 19, 21, 4, 13, 3, 5, 18, 26, 10, 1, 20, 6, 16, 15, 2, 9, 14, 22, 12, 11, 24, 25 },
+            Encoche = 3
+        };
+        public Rotor r2 = new Rotor
+        {
+            Position = 0,
+            PositionInitiale = 0,
+            Config = new int[] { 3, 12, 4, 26, 15, 19, 14, 22, 16, 8, 5, 9, 23, 10, 17, 18, 2, 6, 1, 7, 21, 11, 20, 24, 25, 13 },
+            Encoche = 15
+        };
+        public Rotor r3 = new Rotor
+        {
+            Position = 0,
+            PositionInitiale = 0,
+            Config = new int[] {24, 3, 13, 14, 21, 16, 26, 5, 19, 12, 22, 4,
+                     11, 17, 18, 15, 25, 20, 2, 8, 1, 7, 9, 23, 6, 10 },
+            Encoche = 18,
+        };
         public Reflecteur r = new Reflecteur();
 
         public string Encode(string input)

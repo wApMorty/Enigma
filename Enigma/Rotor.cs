@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Enigma
 {
-    public abstract class Rotor
+    public class Rotor
     {
-        public int Position;
-        public int PositionInitiale;
-        public int[] Config;
-        public int Encoche;
+        public int Position { get; set; }
+        public int PositionInitiale { get; set; }
+        public int[] Config { get; set; }
+        public int Encoche { get; set; }
 
         public void Tourner()
         {
